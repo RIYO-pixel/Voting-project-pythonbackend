@@ -2,13 +2,14 @@ from flask import Flask
 from flask_cors import CORS
 from models import models_blueprint
 from database import mongo_health_bp
+from database.db_config import init_mongo
 from routes import routes_blueprint
 from routes.registerface import face_bp
 from routes.verifyface import verify_face_bp
 from utils import utils_blueprint
 
 app = Flask(__name__)
-
+init_mongo()
 # Enable CORS for all routes
 CORS(app)
 
