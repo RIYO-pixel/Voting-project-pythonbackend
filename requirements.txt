@@ -1,5 +1,9 @@
-opencv-python
-tensorflow
+deepface
+opencv-python-headless
+tensorflow-cpu
+numpy
+flask
+
 deepface
 Flask
 pymongo
