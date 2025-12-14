@@ -9,3 +9,4 @@ numpy
 pandas
 tf-keras
 gunicorn
+python-dotenv
