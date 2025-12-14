@@ -19,7 +19,7 @@ def init_mongo():
 
         _db = _client["voting_project"]
 
-def get_collection(name):
+def get_collection(name="voter_face_data"):
     if _db is None:
         raise RuntimeError("MongoDB not initialized")
     return _db[name]
